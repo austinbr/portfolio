@@ -91,6 +91,11 @@ module.exports = function(app) {
         res.sendFile(path.resolve("server/img/cygnusnebula.jpg"))
     });
 
+    app.get("/img/resume.pdf", (req, res, next) => {
+        console.log('***** routes > img')
+        res.sendFile(path.resolve("server/img/resume.pdf"))
+    });
+
     //  NODE ROUTE
     app.all("*", (req,res,next) => {
         console.log('***** routes > node route fired')

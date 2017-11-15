@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h3>About Me</h3>\n\n<p>I'm a full stack developer from Mukilteo, WA.</p>\n\n<p>After earning my BA (Financial Economics, Philosophy - WWU '11) I ended up working in accounting. Only problem is, I hate accounting!</p>\n\n<p>So I decided a change was in order. I attended the Coding Dojo bootcamp and am eager to apply my new found skills.</p>"
+module.exports = "<h3>About Me</h3>\n\n<p>I'm a full stack developer from Mukilteo, WA.</p>\n\n<p>After earning my BA (Financial Economics, Philosophy) I ended up working in accounting. Faced with a rather tedious data entry assignment, I began to explore how to automate the problem through Excel's VBA programming language, which gave me first real taste of useful programming.</p>\n<p>I was immediately hooked! In fact, I found I was spending most of my time thinking about ways to improve my code or cool new features I could add. So, upon completion of my contract, I decided to pursue coding as a profession.</p>\n\n\n<p>I attended the Coding Dojo bootcamp, where I spent over 1,000 hours learning how to build and deploy fullstack web applications across three different languages. Now I am eager to apply these new found skills to more interesting and complex problems!</p>"
 
 /***/ }),
 
@@ -197,14 +197,12 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__resume_resume_component__ = __webpack_require__("../../../../../src/app/resume/resume.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__project_service__ = __webpack_require__("../../../../../src/app/project.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -227,8 +225,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__about_about_component__["a" /* AboutComponent */],
             __WEBPACK_IMPORTED_MODULE_6__projects_projects_component__["a" /* ProjectsComponent */],
             __WEBPACK_IMPORTED_MODULE_7__resume_resume_component__["a" /* ResumeComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__home_home_component__["a" /* HomeComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -304,67 +301,6 @@ ContactComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/home/home.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/home/home.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  home works!\n</p>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/home/home.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var HomeComponent = (function () {
-    function HomeComponent() {
-    }
-    HomeComponent.prototype.ngOnInit = function () {
-    };
-    return HomeComponent;
-}());
-HomeComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-home',
-        template: __webpack_require__("../../../../../src/app/home/home.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
-    }),
-    __metadata("design:paramtypes", [])
-], HomeComponent);
-
-//# sourceMappingURL=home.component.js.map
-
-/***/ }),
-
 /***/ "../../../../../src/app/project.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -416,7 +352,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/projects/projects.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h4>MobaLeague</h4>\n  <p>A 4 person multiplayer fps/moba game built in Unity.</p>\n</div>\n\n<br>\n\n<div>\n  <h4>Travel Buddy</h4>\n  <p>A travel board built with Python, Django, and MySQL</p>\n</div>\n\n<br>\n\n<div>\n  <h4>Idea Board</h4>\n  <p>An idea posting board where users can post ideas and comment/like other posts. Built using C#, ASP.NET, MySQL</p>\n</div>\n\n<br>\n\n<h4>And more to come!</h4>"
+module.exports = "<div>\n  <h4>MobaLeague</h4>\n  <p>A 4 person multiplayer fps/moba game built in Unity.</p>\n</div>\n\n<br>\n\n<div>\n  <h4>Travel Buddy</h4>\n  <p>Built and deployed a Travel Planning site using Python, Django, and MySQL. Users were able to create an account, post new travel plans, join other users’ planned trips, and leave comments.</p>\n</div>\n\n<br>\n\n<div>\n  <h4>Idea Board</h4>\n  <p>Built and deployed an Idea Wall site using .NET,  Dapper, and MySQL. Users were able to login, post new ideas, leave comments, and vote on their favorite ideas.</p>\n</div>\n\n<br>\n\n<h4>And more to come!</h4>"
 
 /***/ }),
 
@@ -477,7 +413,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/resume/resume.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  resume works!\n</p>\n"
+module.exports = "<div style=\"text-align: center\">\n  <embed src=\"img/resume.pdf\" width=\"75%\" height=\"1200px\" type='application/pdf'>\n</div>\n"
 
 /***/ }),
 
