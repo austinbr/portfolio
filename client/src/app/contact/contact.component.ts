@@ -10,6 +10,9 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    document.querySelector('#navbar').scrollIntoView()
+
   }
 
 }

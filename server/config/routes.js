@@ -1,6 +1,4 @@
 var mongoose = require('mongoose');
-// var users = require('../controllers/users.js');
-// var questions = require('../controllers/questions.js');
 var path = require("path");
 
 module.exports = function(app) {
@@ -42,58 +40,58 @@ module.exports = function(app) {
 
     // STATIC ROUTES
     app.get("/css/component.css", (req, res, next) => {
-        console.log('***** routes > css')
-        res.sendFile(path.resolve("server/css/component.css"))
+        console.log('***** routes > css - component')
+        res.sendFile(path.resolve("server/static/css/component.css"))
     });
 
     app.get("/css/demo.css", (req, res, next) => {
-        console.log('***** routes > css')
-        res.sendFile(path.resolve("server/css/demo.css"))
+        console.log('***** routes > css - demo')
+        res.sendFile(path.resolve("server/static/css/demo.css"))
     });
 
     app.get("/css/normalize.css", (req, res, next) => {
-        console.log('***** routes > css')
-        res.sendFile(path.resolve("server/css/normalize.css"))
+        console.log('***** routes > css - normalize')
+        res.sendFile(path.resolve("server/static/css/normalize.css"))
     });
 
     app.get("/css/navbar.css", (req, res, next) => {
-        console.log('***** routes > css')
-        res.sendFile(path.resolve("server/css/navbar.css"))
+        console.log('***** routes > css - navbar')
+        res.sendFile(path.resolve("server/static/css/navbar.css"))
     });
 
     app.get("/js/TweenLite.min.js", (req, res, next) => {
-        console.log('***** routes > script')
-        res.sendFile(path.resolve("server/js/TweenLite.min.js"))
+        console.log('***** routes > script - tweenlite')
+        res.sendFile(path.resolve("server/static/js/TweenLite.min.js"))
     });
     
     app.get("/js/EasePack.min.js", (req, res, next) => {
-        console.log('***** routes > script')
-        res.sendFile(path.resolve("server/js/EasePack.min.js"))
+        console.log('***** routes > script - easepack')
+        res.sendFile(path.resolve("server/static/js/EasePack.min.js"))
     });
 
     app.get("/js/rAF.js", (req, res, next) => {
-        console.log('***** routes > script')
-        res.sendFile(path.resolve("server/js/rAF.js"))
+        console.log('***** routes > script - rAF')
+        res.sendFile(path.resolve("server/static/js/rAF.js"))
     });
 
     app.get("/js/demo-1.js", (req, res, next) => {
-        console.log('***** routes > script')
-        res.sendFile(path.resolve("server/js/demo-1.js"))
+        console.log('***** routes > script - demo')
+        res.sendFile(path.resolve("server/static/js/demo-1.js"))
     });
 
     app.get("/js/navbar.js", (req, res, next) => {
-        console.log('***** routes > script')
-        res.sendFile(path.resolve("server/js/navbar.js"))
+        console.log('***** routes > script - navbar')
+        res.sendFile(path.resolve("server/static/js/navbar.js"))
     });
 
     app.get("/img/cygnusnebula.jpg", (req, res, next) => {
-        console.log('***** routes > img')
-        res.sendFile(path.resolve("server/img/cygnusnebula.jpg"))
+        console.log('***** routes > img - cygnus')
+        res.sendFile(path.resolve("server/static/img/cygnusnebula.jpg"))
     });
 
     app.get("/img/resume.pdf", (req, res, next) => {
-        console.log('***** routes > img')
-        res.sendFile(path.resolve("server/img/resume.pdf"))
+        console.log('***** routes > img - resume')
+        res.sendFile(path.resolve("server/static/img/resume.pdf"))
     });
 
     //  NODE ROUTE

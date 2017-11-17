@@ -10,6 +10,9 @@ export class ResumeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    document.querySelector('#navbar').scrollIntoView()
+
   }
 
 }

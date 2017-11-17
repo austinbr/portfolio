@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h3>About Me</h3>\n\n<p>I'm a full stack developer from Mukilteo, WA.</p>\n\n<p>After earning my BA (Financial Economics, Philosophy) I ended up working in accounting. Faced with a rather tedious data entry assignment, I began to explore how to automate the problem through Excel's VBA programming language, which gave me first real taste of useful programming.</p>\n<p>I was immediately hooked! In fact, I found I was spending most of my time thinking about ways to improve my code or cool new features I could add. So, upon completion of my contract, I decided to pursue coding as a profession.</p>\n\n\n<p>I attended the Coding Dojo bootcamp, where I spent over 1,000 hours learning how to build and deploy fullstack web applications across three different languages. Now I am eager to apply these new found skills to more interesting and complex problems!</p>"
+module.exports = "<div style=\"margin: 5%\">\n\n    <h3>About Me</h3>\n\n    <p>I am a Web Developer from Mukilteo, WA.</p>\n\n    <p>After earning my BA (Financial Economics, Philosophy) I ended up working in accounting. Faced with a rather tedious data entry assignment, I began to explore how to automate the problem through Excel's VBA programming language, which gave me first real taste of useful programming.</p>\n    <p>I was immediately hooked! In fact, I found I was spending most of my time thinking about ways to improve my code or cool new features I could add. So, upon completion of my contract, I decided to pursue coding as a profession.</p>\n\n\n    <p>I attended the Coding Dojo bootcamp, where I spent over 1,000 hours learning how to build and deploy fullstack web applications across three different languages. Now I am eager to apply these new found skills to more interesting and complex problems!</p>\n\n</div>\n"
 
 /***/ }),
 
@@ -167,6 +167,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
@@ -261,7 +263,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<ul text-decoration: none>\n  <li>Email: <a href=\"mailto:Br.austin3@gmail.com\">Br.austin3@gmail.com</a></li>\n  <li>Phone: (425) 324-4390</li>\n  <li>Github: <a href=\"https://github.com/austinbr\">https://github.com/austinbr</a></li>\n</ul>\n"
+module.exports = "<div style=\"margin: 5%\">\n\n  <ul text-decoration: none>\n    <li>Email: <a href=\"mailto:Br.austin3@gmail.com\">Br.austin3@gmail.com</a></li>\n    <li>Phone: <a href=\"tel: (425) 324-4390\">(425) 324-4390</a></li>\n    <li>Github: <a href=\"https://github.com/austinbr\">https://github.com/austinbr</a></li>\n    <li>LinkedIn: <a href=\"https://www.linkedin.com/in/austinbr/\">https://www.linkedin.com/in/austinbr/</a></li>\n  </ul>\n\n</div>"
 
 /***/ }),
 
@@ -285,6 +287,7 @@ var ContactComponent = (function () {
     function ContactComponent() {
     }
     ContactComponent.prototype.ngOnInit = function () {
+        document.querySelector('#navbar').scrollIntoView();
     };
     return ContactComponent;
 }());
@@ -352,7 +355,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/projects/projects.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h4>MobaLeague</h4>\n  <p>A 4 person multiplayer fps/moba game built in Unity.</p>\n</div>\n\n<br>\n\n<div>\n  <h4>Travel Buddy</h4>\n  <p>Built and deployed a Travel Planning site using Python, Django, and MySQL. Users were able to create an account, post new travel plans, join other users’ planned trips, and leave comments.</p>\n</div>\n\n<br>\n\n<div>\n  <h4>Idea Board</h4>\n  <p>Built and deployed an Idea Wall site using .NET,  Dapper, and MySQL. Users were able to login, post new ideas, leave comments, and vote on their favorite ideas.</p>\n</div>\n\n<br>\n\n<h4>And more to come!</h4>"
+module.exports = "<div style=\"margin: 5%\">\n\n  <div>\n      <h4>Portfolio</h4>\n      <p> The portfolio you are currently viewing was built with Node, Express, and Angular.</p>\n    </div>\n  \n    <br>\n\n  <div>\n    <h4>MobaLeague</h4>\n    <p>A 4 person multiplayer fps/moba game built in Unity. Features include AI pathing, multiplayer networking, and gunplay physics and animations.</p>\n  </div>\n\n  <br>\n\n  <div>\n    <h4>Travel Buddy</h4>\n    <p>Built and deployed a Travel Planning site using Python, Django, and MySQL. Users were able to create an account, post new travel plans, join other users’ planned trips, and leave comments.</p>\n  </div>\n\n  <br>\n\n  <div>\n    <h4>Idea Board</h4>\n    <p>Built and deployed an Idea Wall site using .NET,  Dapper, and MySQL. Users were able to login, post new ideas, leave comments, and vote on their favorite ideas.</p>\n  </div>\n\n  <br>\n\n  <h4>And more to come!</h4>\n\n</div>"
 
 /***/ }),
 
@@ -376,6 +379,7 @@ var ProjectsComponent = (function () {
     function ProjectsComponent() {
     }
     ProjectsComponent.prototype.ngOnInit = function () {
+        document.querySelector('#navbar').scrollIntoView();
     };
     return ProjectsComponent;
 }());
@@ -413,7 +417,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/resume/resume.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"text-align: center\">\n  <embed src=\"img/resume.pdf\" width=\"75%\" height=\"1200px\" type='application/pdf'>\n</div>\n"
+module.exports = "<div style=\"text-align: center; margin-top: 5%\">\n  <embed src=\"img/resume.pdf\" width=\"75%\" height=\"1200px\" type='application/pdf'>\n</div>\n"
 
 /***/ }),
 
@@ -437,6 +441,7 @@ var ResumeComponent = (function () {
     function ResumeComponent() {
     }
     ResumeComponent.prototype.ngOnInit = function () {
+        document.querySelector('#navbar').scrollIntoView();
     };
     return ResumeComponent;
 }());

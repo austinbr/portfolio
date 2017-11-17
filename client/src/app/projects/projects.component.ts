@@ -10,6 +10,9 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    document.querySelector('#navbar').scrollIntoView()
+    
   }
 
 }
