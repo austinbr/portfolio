@@ -94,6 +94,31 @@ module.exports = function(app) {
         res.sendFile(path.resolve("server/static/img/resume.pdf"))
     });
 
+    app.get("/favicon-196x196.png", (req, res, next) => {
+        console.log('***** routes > img - favicon-196x196.png')
+        res.sendFile(path.resolve("server/static/img/png/favicon-196x196.png"))
+    });
+
+    app.get("/favicon-96x96.png", (req, res, next) => {
+        console.log('***** routes > img - favicon-96x96.png')
+        res.sendFile(path.resolve("server/static/img/png/favicon-96x96.png"))
+    });
+
+    app.get("/favicon-32x32.png", (req, res, next) => {
+        console.log('***** routes > img - favicon-32x32.png')
+        res.sendFile(path.resolve("server/static/img/png/favicon-32x32.png"))
+    });
+
+    app.get("/favicon-16x16.png", (req, res, next) => {
+        console.log('***** routes > img - favicon-16x16.png')
+        res.sendFile(path.resolve("server/static/img/png/favicon-16x16.png"))
+    });
+
+    app.get("/favicon-128.png", (req, res, next) => {
+        console.log('***** routes > img - favicon-128.png')
+        res.sendFile(path.resolve("server/static/img/png/favicon-128.png"))
+    });
+
     //  NODE ROUTE
     app.all("*", (req,res,next) => {
         console.log('***** routes > node route fired')
