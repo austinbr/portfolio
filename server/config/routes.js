@@ -84,16 +84,6 @@ module.exports = function(app) {
         res.sendFile(path.resolve("server/static/js/navbar.js"))
     });
 
-    app.get("/img/cygnusnebula.jpg", (req, res, next) => {
-        console.log('***** routes > img - cygnus')
-        res.sendFile(path.resolve("server/static/img/cygnusnebula.jpg"))
-    });
-
-    app.get("/img/resume.pdf", (req, res, next) => {
-        console.log('***** routes > img - resume')
-        res.sendFile(path.resolve("server/static/img/resume.pdf"))
-    });
-
     app.get("/favicon-196x196.png", (req, res, next) => {
         console.log('***** routes > img - favicon-196x196.png')
         res.sendFile(path.resolve("server/static/img/png/favicon-196x196.png"))
@@ -117,6 +107,81 @@ module.exports = function(app) {
     app.get("/favicon-128.png", (req, res, next) => {
         console.log('***** routes > img - favicon-128.png')
         res.sendFile(path.resolve("server/static/img/png/favicon-128.png"))
+    });
+
+    app.get("/img/cygnusnebula.jpg", (req, res, next) => {
+        console.log('***** routes > img - cygnus')
+        res.sendFile(path.resolve("server/static/img/cygnusnebula.jpg"))
+    });
+
+    app.get("/img/resume.pdf", (req, res, next) => {
+        console.log('***** routes > img - resume')
+        res.sendFile(path.resolve("server/static/img/resume.pdf"))
+    });
+
+    app.get("/img/Screenshots/rl1.png", (req, res, next) => {
+        console.log('***** routes > img - rl1')
+        res.sendFile(path.resolve("server/static/img/Screenshots/rl1.png"))
+    });
+
+    app.get("/img/Screenshots/rl2.png", (req, res, next) => {
+        console.log('***** routes > img - rl2')
+        res.sendFile(path.resolve("server/static/img/Screenshots/rl2.png"))
+    });
+
+    app.get("/img/Screenshots/rl3.png", (req, res, next) => {
+        console.log('***** routes > img - rl3')
+        res.sendFile(path.resolve("server/static/img/Screenshots/rl3.png"))
+    });
+
+    app.get("/img/Screenshots/rl4.png", (req, res, next) => {
+        console.log('***** routes > img - rl4')
+        res.sendFile(path.resolve("server/static/img/Screenshots/rl4.png"))
+    });
+
+    app.get("/img/Screenshots/rl5.png", (req, res, next) => {
+        console.log('***** routes > img - rl5')
+        res.sendFile(path.resolve("server/static/img/Screenshots/rl5.png"))
+    });
+
+    app.get("/img/Screenshots/rl6.png", (req, res, next) => {
+        console.log('***** routes > img - rl6')
+        res.sendFile(path.resolve("server/static/img/Screenshots/rl6.png"))
+    });
+
+    app.get("/img/Screenshots/iw1.png", (req, res, next) => {
+        console.log('***** routes > img - iw1')
+        res.sendFile(path.resolve("server/static/img/Screenshots/iw1.png"))
+    });
+
+    app.get("/img/Screenshots/iw2.png", (req, res, next) => {
+        console.log('***** routes > img - iw2')
+        res.sendFile(path.resolve("server/static/img/Screenshots/iw2.png"))
+    });
+
+    app.get("/img/Screenshots/iw3.png", (req, res, next) => {
+        console.log('***** routes > img - iw3')
+        res.sendFile(path.resolve("server/static/img/Screenshots/iw3.png"))
+    });
+
+    app.get("/img/Screenshots/tb1.png", (req, res, next) => {
+        console.log('***** routes > img - tb1')
+        res.sendFile(path.resolve("server/static/img/Screenshots/tb1.png"))
+    });
+
+    app.get("/img/Screenshots/tb2.png", (req, res, next) => {
+        console.log('***** routes > img - tb2')
+        res.sendFile(path.resolve("server/static/img/Screenshots/tb2.png"))
+    });
+
+    app.get("/img/Screenshots/tb3.png", (req, res, next) => {
+        console.log('***** routes > img - tb3')
+        res.sendFile(path.resolve("server/static/img/Screenshots/tb3.png"))
+    });
+
+    app.get("/img/Screenshots/tb4.png", (req, res, next) => {
+        console.log('***** routes > img - tb4')
+        res.sendFile(path.resolve("server/static/img/Screenshots/tb4.png"))
     });
 
     //  NODE ROUTE

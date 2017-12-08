@@ -153,8 +153,8 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            // 248,228,127  |  156,217,249
-            ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+            // 248,228,127 | 138,182,236 |  156,217,249
+            ctx.strokeStyle = 'rgba(138,182,236,'+ p.active+')';
             ctx.stroke();
         }
     }
@@ -173,7 +173,7 @@
             if(!_this.active) return;
             ctx.beginPath();
             ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(156,217,249,'+ _this.active+')';
+            ctx.fillStyle = 'rgba(138,182,236,'+ _this.active+')';
             ctx.fill();
         };
     }
